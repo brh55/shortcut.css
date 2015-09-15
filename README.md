@@ -9,14 +9,18 @@ This framework is built on these principles:
 - Behavioral driven class names (ie: center-this, fix-this-width, etc) for easy to remember
 - Hackathon specific requirements (quick styling, teams lacking designers, time constraints, quick implementation, etc)
 - Modularity to select needed components
+- Framework agnostic, meaning ideally its intended as an add-on to your existing framework.
 
 ## Instructions
 Coming soon.
 
-## Planned Features
+## Planned Features/Fixes
 - Box-sizing to fix width calculations for overflow elements
 - Vertical equal heights for items to use flexbox
 - Flat-colors for Background and Font Color
+- Overflowing elements
+- Typography quick clean up
+- Resets
 
 ## Disclaimer
 This is not the type of framework is intended for 'quick-up-and-going' for Hackathon participants who have little CSS knowledge, but want to spice up their projects, yet run into common layout or styling problems. Thus, this framework is not intended to be used for production apps, as this will bloat your HTML with additional CSS classes! If you do need to apply some of these fixes to your application, view the source code of this repo, and apply similar properties within your rule declarations. If your using Sass, you could theoretically extend these generic classes to your individual classes, but there may be some performance degredation and it may make it unmaintainable quickly.
@@ -25,7 +29,7 @@ This is not the type of framework is intended for 'quick-up-and-going' for Hacka
 ### Repository Guidelines:
 - Focus on elegant solutions that are scalable in most use-cases, abstraction is important
 - Use CSS standards when possible
-- If possible, keep commits clean, present-tense, and meaningful
+- If possible, keep commits clean, short titles, present-tense, and meaningful 
 - Comments. Please let us know what a specific rule declaration
 - Behavior driven class names that are easy to remember for anyone
 
