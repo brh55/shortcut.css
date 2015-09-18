@@ -10,6 +10,7 @@ This framework is built on these principles:
 - Hackathon specific requirements (quick styling, teams lacking designers, time constraints, quick implementation, etc)
 - Modularity to select needed components
 - Framework agnostic, meaning ideally its intended as an add-on to your existing framework.
+- Minimalistic by nature to be lean and never an attempt to do too much
 
 ## Instructions
 Coming soon.
