@@ -1,6 +1,6 @@
 # CSSforHackathons
-[Build Status](https://travis-ci.org/brh55/HackCSS.svg)
-[devDendencies Status](https://david-dm.org/brh55/hackcss.svg)
+![Build Status](https://travis-ci.org/brh55/HackCSS.svg)
+![devDendencies Status](https://david-dm.org/brh55/hackcss.svg)
 
 A quick and dirty CSS framework to use for hackathons to fix typical CSS issues for CSS newbies. Therefore, a lot of these classes are wrappers for fairly basic set of CSS properties for someone who may have a fair knowledge of CSS, but it's designed to be straightforward in English and dead simple for CSS beginners or a project not utilizing Sass.
 
