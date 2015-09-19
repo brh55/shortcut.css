@@ -1,12 +1,13 @@
 # CSSforHackathons
-![Build Status](https://travis-ci.org/brh55/HackCSS.svg)
-![devDendencies Status](https://david-dm.org/brh55/hackcss.svg)
+[![Build Status](https://travis-ci.org/brh55/HackCSS.svg)](https://travis-ci.org/brh55/HackCSS)
+[![devDendencies Status](https://david-dm.org/brh55/hackcss/dev-status.svg)](https://david-dm.org/brh55/hackcss#info=devDependencies)
 
 A quick and dirty CSS framework to use for hackathons to fix typical CSS issues for CSS newbies. Therefore, a lot of these classes are wrappers for fairly basic set of CSS properties for someone who may have a fair knowledge of CSS, but it's designed to be straightforward in English and dead simple for CSS beginners or a project not utilizing Sass.
 
 ## Framework Principles
 This framework is built on these principles:
 
+- AEMI - ACTION-ELEMENT-MODIFIER--IDENTIFIER Class Name Convention
 - Quick prototyping
 - Fast designing w/ design principles in mind
 - Behavioral driven class names (ie: center-this, fix-this-width, etc) for easy to remember
@@ -15,8 +16,39 @@ This framework is built on these principles:
 - Framework agnostic, meaning ideally its intended as an add-on to your existing framework.
 - Minimalistic by nature to be lean and never an attempt to do too much
 
-## Instructions
-Coming soon.
+## Getting Started
+### One Thing You Need to Know!
+If you are new to CSS, there are two large distinctions that many beginners don't understand initially: PARENT Element vs ACTUAL/THIS Element. Essentially, what this means is that some CSS rules are applied to the element itself, while others are applied to the element's parent, then the rules are delegated accordingly.
+
+To illustrate, if you wanted to center align text, you need the text-align rule, which you would apply to the element's parent. 
+
+HTML Markup
+```html
+<div class="parent-element"> <!-- I apply text-align to parent element -->
+	<p>Text that I want to center</p> <!-- I want to center this -->
+</div>
+```
+
+CSS Markup
+```css
+/* This will center the text inside the parent element */
+.parent-element {
+	text-align: center;
+}
+```
+
+Hence, to use this library, if you see a class name with `...-...-...-inside`, this means you need to apply it to the parent element. In contrast, if you see `...-...-...-this`, you apply that class to the element directly. 
+
+Done. You're all set to use this library!
+
+### To Use
+Download the dest/hackCSS.min.css file, and create a link to it in the head of you html of your application.
+
+```html
+<link rel="stylesheet" type="text/css" href="file/path/hackCSS.min.css">
+```
+
+Now you're all set to go!
 
 ## Planned Features/Fixes
 - Box-sizing to fix width calculations for overflow elements
