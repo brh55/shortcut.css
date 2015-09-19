@@ -23,9 +23,12 @@
   },
   "homepage": "https://github.com/brh55/HackCSS#readme",
   "devDependencies": {
+    "autoprefixer": "^6.0.3",
     "cssnano": "^3.0.3",
     "gulp": "^3.9.0",
+    "gulp-concat-css": "^2.2.0",
     "gulp-postcss": "^6.0.0",
+    "gulp-rename": "^1.2.2",
     "gulp-scss-lint": "^0.3.0",
     "postcss-scss": "^0.1.2",
     "precss": "^1.1.3"

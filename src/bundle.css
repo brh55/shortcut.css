@@ -1,0 +1,10 @@
+/* ==========================================================================
+   bundle.css File
+
+   Specify the order for importing css files to concat
+   ========================================================================== */
+
+@import 'partials/_variables.css';
+@import 'partials/_mixins.css';
+@import 'partials/_position.css';
+@import 'partials/_coloring.css';
