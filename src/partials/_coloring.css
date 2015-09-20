@@ -31,3 +31,9 @@
 		@if $color == dark-grey { color: $dark-grey; }
 	}
 }
+
+.bold {
+	@mixin ie this, text {
+		font-weight: bold;
+	}
+}

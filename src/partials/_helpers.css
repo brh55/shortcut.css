@@ -1,0 +1,44 @@
+/* ==========================================================================
+   Helpers
+
+   Any helper-related rule declarations
+   ========================================================================== */
+
+.stop,
+.fix {
+	/* stop__inside-block-overflow */
+	@mixin iem inside, block, overflow {
+		overflow: hidden; 
+	}
+	/* fix__inside-block-form-sizes */
+	@mixin iem inside, block, form-sizes {
+		input {
+			box-sizing: border-box;	
+		}
+	}
+}
+
+.center {
+	/* center__inside-block-text-only */
+	@mixin iem inside, block, only-text {
+		text-align: center;
+	}
+	@mixin iem inside, block, only-blocks {
+		width: 100%;
+
+		div {
+			display: block;
+			width: 100%;
+		}
+	}
+	/* center__inside-block-everything */
+	@mixin iem inside, block, everything {
+		text-align: center;
+		width: 100%;
+
+		div {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
