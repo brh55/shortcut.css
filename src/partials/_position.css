@@ -6,20 +6,23 @@
 
 
 .center {
-	/* center__inside-block-text-only */
+	/* center__inside-block-only-text */
 	@mixin iem inside, block, only-text {
 		text-align: center;
 	}
+	
+	/* center__inside-block-only-blocks */
 	@mixin iem inside, block, only-blocks {
-		width: 100%;
-
 		div {
 			display: block;
 			width: 100%;
 		}
 	}
+	
 	/* center__inside-block-everything */
 	@mixin iem inside, block, everything {
+		text-align: center;
+		
 		div {
 			display: block;
 			margin: 0 auto;
