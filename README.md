@@ -38,7 +38,7 @@ CSS Markup
 ```
 
 Using HackCSS Way using the `center__inside-block-only-text` class
-```css
+```html
 <div class="center__inside-block-only-text"> <!-- everything INSIDE -->
 	<p>Text that I want to center</p> <!-- this is centered -->
 </div>

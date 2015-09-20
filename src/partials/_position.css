@@ -3,3 +3,29 @@
 
    Position related css declarations
    ========================================================================== */
+
+
+.center {
+	/* center__inside-block-only-text */
+	@mixin iem inside, block, only-text {
+		text-align: center;
+	}
+	
+	/* center__inside-block-only-blocks */
+	@mixin iem inside, block, only-blocks {
+		div {
+			display: block;
+			width: 100%;
+		}
+	}
+	
+	/* center__inside-block-everything */
+	@mixin iem inside, block, everything {
+		text-align: center;
+		
+		div {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}

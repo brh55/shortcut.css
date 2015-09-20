@@ -18,27 +18,11 @@
 	}
 }
 
-.center {
-	/* center__inside-block-text-only */
-	@mixin iem inside, block, only-text {
-		text-align: center;
-	}
-	@mixin iem inside, block, only-blocks {
-		width: 100%;
-
-		div {
-			display: block;
-			width: 100%;
-		}
-	}
-	/* center__inside-block-everything */
-	@mixin iem inside, block, everything {
-		text-align: center;
-		width: 100%;
-
-		div {
-			display: block;
-			margin: 0 auto;
+/* size__this-block-width-(i+.5) */
+.size {
+	@for $i from 1 to 100 by .5 {
+		@mixin iem this, block, width-$i {
+			width: $i%;
 		}
 	}
 }

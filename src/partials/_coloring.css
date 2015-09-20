@@ -32,6 +32,26 @@
 	}
 }
 
+@each $color in $color-names {
+	.color__this-block-$(color) {
+		@if $color == green { background-color: $green; }
+		@if $color == dark-green { background-color: $dark-green; }
+		@if $color == blue { background-color: $blue; }
+		@if $color == dark-blue { background-color: $dark-blue; }
+		@if $color == purple { background-color: $purple; }
+		@if $color == dark-purple { background-color: $dark-purple; }
+		@if $color == yellow { background-color: $yellow; }
+		@if $color == dark-yellow { background-color: $dark-yellow; }
+		@if $color == red { background-color: $red; }
+		@if $color == dark-red { background-color: $dark-red; }
+		@if $color == orange { background-color: $orange; }
+		@if $color == dark-orange { background-color: $dark-orange; }
+		@if $color == cloud { background-color: $cloud; }
+		@if $color == grey { background-color: $grey; }
+		@if $color == dark-grey { background-color: $dark-grey; }
+	}
+}
+
 .bold {
 	@mixin ie this, text {
 		font-weight: bold;
