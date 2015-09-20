@@ -4,6 +4,7 @@
    Mixins defined here, a way to make life easier.
    ========================================================================== */
 
+/* Use mixins for less-error-prone rules */
 @define-mixin identifier $identifier {
 	&__$(identifier) {
 		@mixin-content;
@@ -34,16 +35,16 @@
 	}
 }
 
-@define-mixin color-this-text $color, $hex {
-	.color__this-text-$(color) {
+
+/* 
+ * Refrain from using this mixin, unless there is a legit reason too
+ * Instead use a @mixin ie within an .action declaration for easier readability
+ */
+
+@define-mixin aiem $action, $identifier, $element, $modifier {
+	.$(action)__$(identifier)-$(element)-$(modifier) {
 		@mixin-content;
 	}
 }
-
-@define-mixin bg-color $hex {
-	background-color: $(hex);
-}
-
-
 
 

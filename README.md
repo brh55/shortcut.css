@@ -17,7 +17,7 @@ This framework is built on these principles:
 - Minimalistic by nature to be lean and never an attempt to do too much
 
 ## Getting Started
-### One Thing You Need to Know!
+### One Thing You Need to Know -- especially Identifiers!
 If you are new to CSS, there are two large distinctions that many beginners don't understand initially: PARENT Element vs ACTUAL/THIS Element. Essentially, what this means is that some CSS rules are applied to the element itself, while others are applied to the element's parent, then the rules are delegated accordingly.
 
 To illustrate, if you wanted to center align text, you would need the text-align property, and then you would apply this property to the element's parent. 
