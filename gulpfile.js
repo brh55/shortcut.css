@@ -1,6 +1,5 @@
 // Build Dependencies
 var autoprefix  = require('autoprefixer');
-var concatCSS	= require('gulp-concat-css');
 var cssnano 	= require('cssnano');
 var gulp        = require('gulp');
 var postcss     = require('gulp-postcss');
