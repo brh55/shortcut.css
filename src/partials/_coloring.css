@@ -4,8 +4,30 @@
    Any color-related rule declarations
    ========================================================================== */
 
-.color {
-	.inside-block {
-		background-color:#FASDASDSA;
+/**
+ * TODO: Find alternative approach that's follows DRY-principles
+ *
+ * => Find a key,value plugin to loop through
+ * => Reduce to a few lines if possible.
+ *
+ */
+
+@each $color in $color-names {
+	.color__this-text-$(color) {
+		@if $color == green { color: $green; }
+		@if $color == dark-green { color: $dark-green; }
+		@if $color == blue { color: $blue; }
+		@if $color == dark-blue { color: $dark-blue; }
+		@if $color == purple { color: $purple; }
+		@if $color == dark-purple { color: $dark-purple; }
+		@if $color == yellow { color: $yellow; }
+		@if $color == dark-yellow { color: $dark-yellow; }
+		@if $color == red { color: $red; }
+		@if $color == dark-red { color: $dark-red; }
+		@if $color == orange { color: $orange; }
+		@if $color == dark-orange { color: $dark-orange; }
+		@if $color == cloud { color: $cloud; }
+		@if $color == grey { color: $grey; }
+		@if $color == dark-grey { color: $dark-grey; }
 	}
 }
