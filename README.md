@@ -1,4 +1,4 @@
-# CSSforHackathons
+# HackCSS
 [![Build Status](https://travis-ci.org/brh55/HackCSS.svg)](https://travis-ci.org/brh55/HackCSS)
 [![devDendencies Status](https://david-dm.org/brh55/hackcss/dev-status.svg)](https://david-dm.org/brh55/hackcss#info=devDependencies)
 
@@ -34,6 +34,13 @@ To illustrate, if you wanted to center align text, you would need the text-align
 }
 ```
 
+Using HackCSS Way using the `center__inside-block-only-text` class
+```css
+<div class="center__inside-block-only-text"> <!-- everything INSIDE -->
+	<p>Text that I want to center</p> <!-- this is centered -->
+</div>
+```
+
 Hence, to use this library follows a AIBM class name convention.
 
 `ACTION__IDENTIFIER-ELEMENT-MODIFIER`
@@ -43,7 +50,7 @@ Hence, to use this library follows a AIBM class name convention.
 - ELEMENT: What type of element is it: block vs text.
 - MODIFIERS (optional): Describes the action: blue, red, dark-red, etc.
 
-As such, if you see a class name with `...-...-...-inside`, this means you need to apply it to the parent element. In contrast, if you see `...-...-...-this`, you apply that class to the element directly. 
+As such, if you see a class name with `...-inside.-...-...`, this means you need to apply it to the parent element. In contrast, if you see `...-this-...-...`, you apply that class to the element directly. 
 
 Done. You're all set to use this library!
 
