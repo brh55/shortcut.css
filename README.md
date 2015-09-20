@@ -7,7 +7,7 @@ A quick and dirty CSS framework to use for hackathons to fix typical CSS issues 
 ## Framework Principles
 This framework is built on these principles:
 
-- AEMI - ACTION-ELEMENT-MODIFIER--IDENTIFIER Class Name Convention
+- AIEM - ACTION__IDENTIFIER-ELEMENT-MODIFIER Class Name Convention
 - Quick prototyping
 - Fast designing w/ design principles in mind
 - Behavioral driven class names (ie: center-this, fix-this-width, etc) for easy to remember
@@ -20,7 +20,7 @@ This framework is built on these principles:
 ### One Thing You Need to Know!
 If you are new to CSS, there are two large distinctions that many beginners don't understand initially: PARENT Element vs ACTUAL/THIS Element. Essentially, what this means is that some CSS rules are applied to the element itself, while others are applied to the element's parent, then the rules are delegated accordingly.
 
-To illustrate, if you wanted to center align text, you need the text-align rule, which you would apply to the element's parent. 
+To illustrate, if you wanted to center align text, you would need the text-align property, and then you would apply this property to the element's parent. 
 
 HTML Markup
 ```html
@@ -37,12 +37,21 @@ CSS Markup
 }
 ```
 
-Hence, to use this library, if you see a class name with `...-...-...-inside`, this means you need to apply it to the parent element. In contrast, if you see `...-...-...-this`, you apply that class to the element directly. 
+Hence, to use this library follows a AIBM class name convention.
+
+`ACTION__IDENTIFIER-ELEMENT-MODIFIER`
+
+- ACTION: What the class does: color, center, etc.
+- IDENTIFIER: Does this apply to inside(parent) or the element itself(this).
+- ELEMENT: What type of element is it: block vs text.
+- MODIFIERS (optional): Describes the action: blue, red, dark-red, etc.
+
+As such, if you see a class name with `...-...-...-inside`, this means you need to apply it to the parent element. In contrast, if you see `...-...-...-this`, you apply that class to the element directly. 
 
 Done. You're all set to use this library!
 
 ### To Use
-Download the dest/hackCSS.min.css file, and create a link to it in the head of you html of your application.
+Download the dest/hackCSS.min.css file and place it in your project folder. After, create a link to it in the head of you html of your application.
 
 ```html
 <link rel="stylesheet" type="text/css" href="file/path/hackCSS.min.css">

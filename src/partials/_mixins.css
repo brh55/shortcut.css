@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Mixins
+
+   Mixins defined here, a way to make life easier.
+   ========================================================================== */
+
+@define-mixin identifier $identifier {
+	&__$(identifier) {
+		@mixin-content;
+	}
+}
+
+@define-mixin e $element {
+	&-$(element) {
+		@mixin-content;
+	}
+}
+
+@define-mixin m $modifier {
+	&-$(modifier) {
+		@mixin-content;
+	}
+}
+
+@define-mixin ie $identifier, $element {
+	&__$(identifier)-$(element) {
+		@mixin-content;
+	}
+}
+
+@define-mixin iem $identifier, $element, $modifier {
+	&__$(identifier)-$(element)-$(modifier) {
+		@mixin-content;
+	}
+}
+
+@define-mixin color-this-text $color, $hex {
+	.color__this-text-$(color) {
+		@mixin-content;
+	}
+}
+
+@define-mixin bg-color $hex {
+	background-color: $(hex);
+}
+
+
+
+

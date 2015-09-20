@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Variables
+
+   Define variables for usage here to be used globally.
+   ========================================================================== */
+
+/*	Flat-Colors */
+$green: #2ecc71;
+$dark-green: #27ae60;
+
+$blue: #3498db;
+$dark-blue: #2980b9;
+
+$purple: #9b59b6;
+$dark-purple: #8e44ad;
+
+$yellow: #f1c40f;
+$dark-yellow: #f39c12;
+
+$red: #e74c3c;
+$dark-red: #c0392b;
+
+$orange: #e67e22;
+$dark-orange: #d35400;
+
+$cloud: #ecf0f1;
+$grey: #95a5a6;
+$dark-grey: #7f8c8d;
+
+
+/* Lists */
+$color-names: green, dark-green, blue, dark-blue, purple, dark-purple, yellow, dark-yellow, red, dark-red, orange, dark-orange, cloud, grey, dark-grey;
+$color-hexs: #2ecc71, #27ae60, #3498db, #2980b9, #9b59b6, #8e44ad, #f1c40f, #f39c12, #e74c3c, #c0392b, #e67e22, #d35400, #ecf0f1, #95a5a6, #7f8c8d;
+
+
+
