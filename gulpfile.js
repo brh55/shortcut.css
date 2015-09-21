@@ -8,6 +8,7 @@ var precss		= require('precss');
 var rename		= require('gulp-rename');
 var reporter    = require('postcss-reporter');
 var stylelint   = require('stylelint');
+var browserSync = require('browser-sync');
 
 gulp.task('build', function () {
     var processors = [
@@ -29,7 +30,15 @@ gulp.task('build', function () {
     return gulp.src('./src/*.css')
         .pipe(postcss(processors))
 	    .pipe(rename('hackCSS.min.css'))
-	    .pipe(gulp.dest('./dest/css'));
+	    .pipe(gulp.dest('./dist/css'));
 });
 
-gulp.task('default', ['build']);
+gulp.task('serve', function () {
+    browserSync.init({
+        server: './dist',
+        open: false
+    }).
+    gulp.watch('src/**/*.css', ['build']);
+});
+
+gulp.task('default', ['serve']);
