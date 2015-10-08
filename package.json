@@ -24,6 +24,7 @@
   "homepage": "https://github.com/brh55/HackCSS#readme",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
+    "browser-sync": "^2.9.4",
     "cssnano": "^3.0.3",
     "gulp": "^3.9.0",
     "gulp-postcss": "^6.0.0",
