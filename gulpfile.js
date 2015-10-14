@@ -37,7 +37,7 @@ gulp.task('serve', function () {
     browserSync.init({
         server: './dist',
         open: false
-    }).
+    });
     gulp.watch('src/**/*.css', ['build']);
 });
 

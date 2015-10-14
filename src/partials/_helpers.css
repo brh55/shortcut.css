@@ -26,8 +26,9 @@
 		}
 	}
 
+	/* size__inside-block-equal-height */
 	@mixin iem inside, block, equal-height {
-		display: flex
+		display: flex;
 
 		.item {
 			height: 100%;

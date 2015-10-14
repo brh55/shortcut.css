@@ -16,7 +16,8 @@
 		display: flex;
 		justify-content: center;
 	}
-
+	
+	/* center__inside-block-everything-vertical */
 	@mixin iem inside, block, everything-vertical {
 		display: flex;
 		align-items: center;
