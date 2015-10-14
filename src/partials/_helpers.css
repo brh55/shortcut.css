@@ -27,11 +27,12 @@
 	}
 
 	/* size__inside-block-equal-height */
+	/* Apply items in child divs if height's are overriding */
 	@mixin iem inside, block, equal-height {
 		display: flex;
 
-		.item {
-			height: 100%;
+		.items {
+			height: initial;
 		}
 	}
 }
