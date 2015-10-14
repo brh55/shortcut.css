@@ -11,21 +11,14 @@
 		text-align: center;
 	}
 	
-	/* center__inside-block-only-blocks */
-	@mixin iem inside, block, only-blocks {
-		div {
-			display: block;
-			width: 100%;
-		}
-	}
-	
 	/* center__inside-block-everything */
 	@mixin iem inside, block, everything {
-		text-align: center;
-		
-		div {
-			display: block;
-			margin: 0 auto;
-		}
+		display: flex;
+		justify-content: center;
+	}
+
+	@mixin iem inside, block, everything-vertical {
+		display: flex;
+		align-items: center;
 	}
 }

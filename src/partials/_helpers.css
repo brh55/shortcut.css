@@ -25,4 +25,12 @@
 			width: $i%;
 		}
 	}
+
+	@mixin iem inside, block, equal-height {
+		display: flex
+
+		.item {
+			height: 100%;
+		}
+	}
 }
