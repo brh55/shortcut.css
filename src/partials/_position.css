@@ -6,77 +6,124 @@
 
 
 .center {
-	/* center__inside-block-only-text */
-	@mixin iem inside, block, only-text {
-		text-align: center;
-	}
-	
-	/* center__inside-block-everything */
-	@mixin iem inside, block, everything {
-		display: flex;
-		justify-content: center;
-	}
-	
-	/* center__inside-block-everything-vertical */
-	@mixin iem inside, block, everything-vertical {
-		display: flex;
-		align-items: center;
+	@mixin ie inside, block {
+
+		/* center__inside-block-only-text */
+		&-only-text {
+			text-align: center;
+		}
+
+		/* center__inside-block-everything-vertically */
+		&-everything-vertically,
+		&-all-vertically {
+			display: flex;
+			align-items: center;
+		}
+
+		/* center__inside-block-everything-horizontally */
+		&-everything-horizontally,
+		&-all-horizontally {
+			display: flex;
+			justify-content: center;
+		}
+		
+		/* center__inside-block-everything */
+		&-everything {
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			text-align: center;
+		}
 	}
 }
 
 .move {
-	/* move__inside-block-everything-left */
-	@mixin iem inside, block, everything-left {
-		display: flex;
-		justify-content: flex-start;
+	@mixin ie inside, block {
+		
+		/* move__inside-block-everything-left */
+		&-everything-left {
+			display: flex;
+			justify-content: flex-start;
+		}
+
+		/* move__inside-block-everything-right */
+		&-everything-right {
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		/* move__inside-block-everything-evenly */
+		/* @ALIAS: space__inside-block-evenly-horizontally */
+		&-everything-evenly {
+			display: flex;
+			justify-content: space-around;
+		}
 	}
 
-	/* move__inside-block-everything-right */
-	@mixin iem inside, block, everything-right {
-		display: flex;
-		justify-content: flex-end;
-	}
+	@mixin ie this, block {
 
-	/* move__inside-block-everything-evenly */
-	/* @ALIAS: space__inside-block-evenly-horizontally */
-	@mixin iem inside, block, everything-evenly {
-		display: flex;
-		justify-content: space-around;
-	}
+		/* move__this-block-to-the-bottom */
+		&-to-the-bottom {
+			align-self: flex-end;
+		}
 
-	/* move__this-block-to-the-end */
-	@mixin iem this, block, to-the-end {
-		align-self: flex-end;
-	}
+		/* move__this-block-to-the-top */
+		&-to-the-top {
+			align-self: flex-start;
+		}
 
-	/* move__this-block-to-the-start */
-	@mixin iem this, block, to-the-start {
-		align-self: flex-start;
+		/* move__this-block-to-the-front */
+		&-to-the-front,
+		&-to-first,
+		&-to-1 {
+			order: 1;
+		}
+
+		/* loop to allow reordering of each item up to 100 different list 
+				move__this-block-to-#
+		*/
+		@for $i from 1 to 100 {
+			&-to-$i {
+				order: $i;
+			}
+		}
 	}
 }
 
 .break {
-	/* break__inside-block-into-rows */
-	@mixin iem inside, block, into-rows {
-		flex-flow: row wrap;
+	@mixin ie inside, block {
+		/* break__inside-block-into-rows */
+		&-into-rows {
+			flex-flow: row wrap;
+		}
+	}
+
+	@mixin ie this, block {
+		/* break__this-block-order-to-first */
+		&-order-to-first {
+			@extend .move__this-block-to-the-front;
+		}
 	}
 }
 
 .space {
-	/* space__inside-block-evenly-vertically */
-	@mixin iem inside, block, evenly-vertically {
-		align-content: space-between;
-	}
+	@mixin ie inside, block {
 
-	/* space__inside-block-evenly-horizontally */
-	@mixin iem inside, block, evenly-horizontally {
-		@extend .move__inside-block-everything-evenly;
-	}
+		/* space__inside-block-evenly-vertically */
+		&-evenly-vertically {
+			align-content: space-between;
+		}
 
-	/* space__inside-block-all-around-evenly */
-	@mixin iem inside, block, all-around-evenly {
-		align-content: space-around;
-		justify-content: space-around;
+		/* space__inside-block-evenly-horizontally */
+		&-evenly-horizontally {
+			@extend .move__inside-block-everything-evenly;
+		}
+
+		/* space__inside-block-all-around-evenly */
+		&-all-around-evenly {
+			align-content: space-around;
+			justify-content: space-around;
+		}
 	}
 }
 

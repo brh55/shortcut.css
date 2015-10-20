@@ -6,14 +6,18 @@
 
 .stop,
 .fix {
-	/* stop__inside-block-overflow */
-	@mixin iem inside, block, overflow {
-		overflow: hidden; 
-	}
-	/* fix__inside-block-form-sizes */
-	@mixin iem inside, block, form-sizes {
-		input {
-			box-sizing: border-box;	
+	@mixin ie inside, block {
+
+		/* stop__inside-block-overflow */
+		&-overflow {
+			overflow: hidden; 
+		}
+
+		/* fix__inside-block-form-sizes */
+		&-form-sizes {
+			input {
+				box-sizing: border-box;	
+			}
 		}
 	}
 }
