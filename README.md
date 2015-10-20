@@ -15,7 +15,7 @@ This framework is built on these principles:
 - Modularity to select needed components
 - Framework agnostic, meaning ideally its intended as an add-on to your existing framework.
 - Minimalistic by nature to be lean and never an attempt to do too much
-- Currently 22 Kbs minified
+- Extremely lightweight (currently 22 KBs - minified)
 
 ## Getting Started
 ### One Thing You Need to Know: What are identifiers?
