@@ -28,6 +28,7 @@
 		}
 		
 		/* center__inside-block-everything */
+		/* @ALIAS: .move__inside-block-everything-center */
 		&-everything {
 			display: flex;
 			justify-content: center;
@@ -41,15 +42,36 @@
 	@mixin ie inside, block {
 		
 		/* move__inside-block-everything-left */
-		&-everything-left {
+		&-everything-left,
+		&-everything-to-the-left {
 			display: flex;
 			justify-content: flex-start;
 		}
 
 		/* move__inside-block-everything-right */
-		&-everything-right {
+		&-everything-right,
+		&-everything-to-the-right{
 			display: flex;
 			justify-content: flex-end;
+		}
+
+		/* move__inside-block-everything-bottom */		
+		&-everything-bottom,
+		&-everything-to-the-bottom {
+			display: flex;
+			align-items: flex-end;
+		}
+
+		&-everything-top,
+		&-everything-to-the-top {
+			display: flex;
+			align-itmes: flex-start;
+		}
+
+		/* move__inside-block-everything-center */
+		&-everything-center,
+		&-everything-to-the-center {
+			@extend .center__inside-block-everything-vertically;
 		}
 
 		/* move__inside-block-everything-evenly */
@@ -72,11 +94,10 @@
 			align-self: flex-start;
 		}
 
-		/* move__this-block-to-the-front */
-		&-to-the-front,
-		&-to-first,
-		&-to-1 {
-			order: 1;
+		/* move__this-block-to-the-end */
+		/* Assuming ordering is performed by classes specified in lib */
+		&-to-the-end {
+			order: 101;
 		}
 
 		/* loop to allow reordering of each item up to 100 different list 
@@ -100,8 +121,8 @@
 
 	@mixin ie this, block {
 		/* break__this-block-order-to-first */
-		&-order-to-first {
-			@extend .move__this-block-to-the-front;
+		&-order-to-end {
+			@extend .move__this-block-to-the-end;
 		}
 	}
 }
@@ -127,4 +148,23 @@
 	}
 }
 
+.grow {
+	/* grow__this-block */
+	@mixin ie this, block {
+		flex-grow: 1;
+	
+		&-more {
+			flex-grow: 2
+		}
+
+		&-even-more {
+			flex-grow: 3
+		}
+
+		/* Not max, but will do */
+		&-to-the-max {
+			flex-grow: 99;
+		}
+	}
+}
 
