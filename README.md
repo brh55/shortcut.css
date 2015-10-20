@@ -10,15 +10,16 @@ This framework is built on these principles:
 - AIEM - ACTION__IDENTIFIER-ELEMENT-MODIFIER Class Name Convention
 - Quick prototyping
 - Fast designing w/ design principles in mind
-- Behavioral driven class names (ie: center-this, fix-this-width, etc) for easy to remember
+- Behavioral driven class names (ie: center-this, fix-this-width, etc) for SUPER easy to remember
 - Hackathon specific requirements (quick styling, teams lacking designers, time constraints, quick implementation, etc)
 - Modularity to select needed components
 - Framework agnostic, meaning ideally its intended as an add-on to your existing framework.
 - Minimalistic by nature to be lean and never an attempt to do too much
+- Currently 22 Kbs minified
 
 ## Getting Started
-### One Thing You Need to Know -- especially Identifiers!
-If you are new to CSS, there are two large distinctions that many beginners don't understand initially: PARENT Element vs ACTUAL/THIS Element. Essentially, what this means is that some CSS rules are applied to the element itself, while others are applied to the element's parent, then the rules are delegated accordingly.
+### One Thing You Need to Know: What are identifiers?
+If you are new to CSS, there are two large distinctions that many beginners don't understand initially: PARENT Element vs ACTUAL/THIS (CHILD) Element. Essentially, what this means is that some CSS rules are applied to the element itself, while others are applied to the element's parent, then the rules are delegated accordingly.
 
 To illustrate, if you wanted to center align text, you would need the text-align property, and then you would apply this property to the element's parent. 
 
@@ -66,13 +67,18 @@ Download the dest/hackCSS.min.css file and place it in your project folder. Afte
 
 Now you're all set to go!
 
-## Planned Features/Fixes
+## Features/Fixes
+#### Currently Implemented 
 - Box-sizing to fix width calculations for overflow elements
 - Vertical equal heights for items to use flexbox
 - Flat-colors for Background and Font Color
 - Overflowing elements
+- Flex-box override ordering
+
+#### Currently in Progress
 - Typography quick clean up
 - Resets
+- Basic widely used animations
 
 ## Disclaimer
 This is not the type of framework is intended for 'quick-up-and-going' for Hackathon participants who have little CSS knowledge, but want to spice up their projects, yet run into common layout or styling problems. Thus, this framework is not intended to be used for production apps, as this will bloat your HTML with additional CSS classes! If you do need to apply some of these fixes to your application, view the source code of this repo, and apply similar properties within your rule declarations. If your using Sass, you could theoretically extend these generic classes to your individual classes, but there may be some performance degredation and it may make it unmaintainable quickly.
