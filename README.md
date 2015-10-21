@@ -1,14 +1,15 @@
 # HackCSS.css
 [![Build Status](https://travis-ci.org/brh55/HackCSS.svg)](https://travis-ci.org/brh55/HackCSS)
 [![devDendencies Status](https://david-dm.org/brh55/hackcss/dev-status.svg)](https://david-dm.org/brh55/hackcss#info=devDependencies)
-*Don't fight with CSS, style with it*
+
+*Don't fight with CSS, style with it.*
 
 `HackCSS.css` is a straightfoward library for hackathons to fix typical CSS issues designed for CSS newcomers.
 
 This framework is built on these principles:
-- AIEM - ACTION__IDENTIFIER-ELEMENT-MODIFIER Class Name Convention
-- Behavior driven class names (ie: center-this, fix-this-width, etc) for easy to remember names
-- Hackathon specific requirements (quick styling, teams lacking designers, time constraints, quick implementation, etc)
+- AIEM - `ACTION__IDENTIFIER-ELEMENT-MODIFIER` Class Name Convention
+- Behavior driven class names _(ie: center-this, fix-this-width, etc)_ for easy to remember names
+- Hackathon specific requirements _(quick styling, teams lacking designers, time constraints, quick implementation, etc)_
 
 ## How do we use this? !@#$?
 1. Download the dist/css/hackCSS.min.css file and place it in your project folder. After, create a link to within the head of your html.
@@ -25,7 +26,7 @@ This framework is built on these principles:
 bower install HackCSS
 ```
 
-2. _THIS_ vs _INSIDE_
+2. __THIS__ vs __INSIDE__
 
    If you see a class name with `...__inside.-...-...`, this means where ever you attach this class, the behavior occurs within the element. In contrast, if you see `...__this-...-...`, the behavior occurs to the element.
 
@@ -95,7 +96,7 @@ __Animating__
 __Helpers__
 
 * `.stop__inside-block-overflow`, `.fix__inside-block-overflow`
-* `.size__this-block-width-1`, ...+.5 , `.size__inside-block-width-100`
+* `.size__this-block-width-1`, `.size__this-block-width-1.5`, ... , `.size__inside-block-width-100`
 * `.size__inside-block-equal-height`
 
 
