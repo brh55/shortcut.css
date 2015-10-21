@@ -1,10 +1,10 @@
-# HackCSS.css
+# Hack.css
 [![Build Status](https://travis-ci.org/brh55/HackCSS.svg)](https://travis-ci.org/brh55/HackCSS)
 [![devDendencies Status](https://david-dm.org/brh55/hackcss/dev-status.svg)](https://david-dm.org/brh55/hackcss#info=devDependencies)
 
-*Don't fight with CSS, style with it.*
+*Don't fight with css, style with it.*
 
-`HackCSS.css` is a straightfoward library for hackathons to fix typical CSS issues designed for CSS newcomers.
+`hack.css` is a straightfoward library for hackathons to fix typical CSS issues designed for CSS newcomers.
 
 This framework is built on these principles:
 - AIEM - `ACTION__IDENTIFIER-ELEMENT-MODIFIER` Class Name Convention
@@ -12,18 +12,18 @@ This framework is built on these principles:
 - Hackathon specific requirements _(quick styling, teams lacking designers, time constraints, quick implementation, etc)_
 
 ## How do we use this? !@#$?
-1. Download the dist/css/hackCSS.min.css file and place it in your project folder. After, create a link to within the head of your html.
+1. Download the dist/css/hack.min.css file and place it in your project folder. After, create a link to within the head of your html.
 
     ```html
 <head>
-	<link rel="stylesheet" type="text/css" href="file/path/hackCSS.min.css">
+	<link rel="stylesheet" type="text/css" href="file/path/hack.min.css">
 </head>
 ```
 
      You can also use bower if you know what that is...
 
      ```bash
-bower install HackCSS
+bower install hackcss
 ```
 
 2. __THIS__ vs __INSIDE__
@@ -99,9 +99,34 @@ __Helpers__
 * `.size__this-block-width-1`, ... , `.size__inside-block-width-100`
 * `.size__inside-block-equal-height`
 
+## For Developers
+Hack.css is built off PostCSS and gulp, which makes it easy for you to create your own flavor for your next hackathon. Ensure that you have gulp install and dev dependencies.
+
+```bash
+$ cd path/to/hack.css/
+$ npm install
+```
+
+Afterwards, you can develop with either with a constant stream open to watch for changes within the src directory, which will recompile on every change.
+
+```bash
+$ gulp serve
+```
+
+Or you can build manually.
+
+```bash
+$ gulp build
+```
+
+If you want to add your own partial to the build, simply create the new file, and add an import line in `bundle.css`.
+
+```css
+@import "partials/_yourpartial.css";
+```
 
 ## License
-`HackCSS.css` is under the [MIT license](http://opensource.org/licenses/MIT).
+`hack.css` is under the [MIT license](http://opensource.org/licenses/MIT).
 
 ## Contribute
 Fork the repository, implement a solution, and submit a pull request to be reviewed. As long as the solution fits with the scope of the project, and all feedback has been addressed, we will merge it in.

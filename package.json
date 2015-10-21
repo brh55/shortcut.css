@@ -1,14 +1,14 @@
 {
-  "name": "hackcss",
-  "version": "0.0.1",
-  "description": "A quick and lean CSS add-on framework for hackathoners who are beginners to CSS.",
+  "name": "hack.css",
+  "version": "0.0.5",
+  "description": "A light CSS library to simplify your next hackathon",
   "main": "index.js",
   "scripts": {
-    "test": "gulp serve"
+    "test": "gulp build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brh55/HackCSS.git"
+    "url": "git+https://github.com/brh55/hack.css.git"
   },
   "keywords": [
     "CSS",
@@ -19,12 +19,11 @@
   "author": "Branodn Him",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/brh55/HackCSS/issues"
+    "url": "https://github.com/brh55/hack.css/issues"
   },
-  "homepage": "https://github.com/brh55/HackCSS#readme",
+  "homepage": "https://github.com/brh55/hack.css#readme",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
-    "browser-sync": "^2.9.4",
     "cssnano": "^3.0.3",
     "gulp": "^3.9.0",
     "gulp-postcss": "^6.0.0",

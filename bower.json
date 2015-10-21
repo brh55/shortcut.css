@@ -1,7 +1,7 @@
 {
-	"name": "HackCSS",
-	"version": "0.0.4",
-	"main": "/dist/css/hackCSS.min.css",
+	"name": "hack.css",
+	"version": "0.0.5",
+	"main": "/dist/css/hack.min.css",
 	"ignore": [
 		".travis.yml",
 		".gitignore",
