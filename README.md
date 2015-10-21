@@ -1,95 +1,106 @@
-# HackCSS
+# HackCSS.css
 [![Build Status](https://travis-ci.org/brh55/HackCSS.svg)](https://travis-ci.org/brh55/HackCSS)
 [![devDendencies Status](https://david-dm.org/brh55/hackcss/dev-status.svg)](https://david-dm.org/brh55/hackcss#info=devDependencies)
+*Don't fight with CSS, style with it*
 
-A quick and dirty CSS framework to use for hackathons to fix typical CSS issues for CSS newbies. Therefore, a lot of these classes are wrappers for fairly basic set of CSS properties for someone who may have a fair knowledge of CSS, but it's designed to be straightforward in English and dead simple for CSS beginners or a project not utilizing Sass.
+`HackCSS.css` is a straightfoward library for hackathons to fix typical CSS issues designed for CSS newcomers.
 
-## Framework Principles
 This framework is built on these principles:
-
 - AIEM - ACTION__IDENTIFIER-ELEMENT-MODIFIER Class Name Convention
-- Quick prototyping
-- Fast designing w/ design principles in mind
-- Behavioral driven class names (ie: center-this, fix-this-width, etc) for SUPER easy to remember
+- Behavior driven class names (ie: center-this, fix-this-width, etc) for easy to remember names
 - Hackathon specific requirements (quick styling, teams lacking designers, time constraints, quick implementation, etc)
-- Modularity to select needed components
-- Framework agnostic, meaning ideally its intended as an add-on to your existing framework.
-- Minimalistic by nature to be lean and never an attempt to do too much
-- Extremely lightweight (currently 22 KBs - minified)
 
-## Getting Started
-### One Thing You Need to Know: What are identifiers?
-If you are new to CSS, there are two large distinctions that many beginners don't understand initially: PARENT Element vs ACTUAL/THIS (CHILD) Element. Essentially, what this means is that some CSS rules are applied to the element itself, while others are applied to the element's parent, then the rules are delegated accordingly.
+## How do we use this? !@#$?
+1. Download the dist/css/hackCSS.min.css file and place it in your project folder. After, create a link to within the head of your html.
 
-To illustrate, if you wanted to center align text, you would need the text-align property, and then you would apply this property to the element's parent. 
+    ```html
+<head>
+	<link rel="stylesheet" type="text/css" href="file/path/hackCSS.min.css">
+</head>
+```
 
-HTML Markup
-```html
-<div class="parent-element"> <!-- I apply text-align to parent element -->
-	<p>Text that I want to center</p> <!-- I want to center this -->
+     You can also use bower if you know what that is...
+
+     ```bash
+bower install HackCSS
+```
+
+2. _THIS_ vs _INSIDE_
+
+   If you see a class name with `...__inside.-...-...`, this means where ever you attach this class, the behavior occurs within the element. In contrast, if you see `...__this-...-...`, the behavior occurs to the element.
+
+     `this` Example: `color__this-text-red` class
+    ```html
+	<p class="color__this-text-red">Please make me red</p> <!-- This becomes RED: ~~ OOOH ~~ -->
+```
+
+    `inside` Example: `center__inside-block-only-text` class
+    ```html
+<div class="center__inside-block-only-text"> <!-- I want to only center text INSIDE -->
+	<p>I'm centered!</p> <!-- this becomes centered -->
 </div>
 ```
 
-CSS Markup
-```css
-/* This will center the text inside the parent element */
-.parent-element {
-	text-align: center;
-}
-```
+3. Now try out these available classes:
 
-Using HackCSS Way using the `center__inside-block-only-text` class
-```html
-<div class="center__inside-block-only-text"> <!-- everything INSIDE -->
-	<p>Text that I want to center</p> <!-- this is centered -->
-</div>
-```
+__Positioning__
 
-Hence, to use this library follows a AIBM class name convention.
+* `.center__inside-block-only-text`
+* `.center__inside-block-everything-vertically`
+* `.center__inside-block-everything-horizontally`
+* `.center__inside-block-everything`, `.move__inside-block-everything-center`
+* `.move__inside-block-everything-left`
+* `.move__inside-block-everything-right`
+* `.move__inside-block-everything-bottom`
+* `.move__inside-block-everything-top`
+* `.move__inside-block-everything-center`
+* `.move__inside-block-everything-evenly`, `.space__inside-block-evenly-horizontally`
+* `.move__this-block-to-the-bottom`
+* `.move__this-block-to-the-top`
+* `.move__this-block-to-the-end`
+* `.move__this-block-to-1`, ..., `move__this-block-to-100`
+* `.break__inside-block-into-rows`
+* `.break__this-block-order-to-first`
+* `.space__inside-block-evenly-vertically`
+* `.space__inside-block-evenly-horizontally`
+* `.space__inside-block-all-around-evenly`
+* `.grow__this-block`
+* `.grow__this-block-more`
+* `.grow__this-block-even-more`
+* `.grow__this-block-to-the-max`
 
-`ACTION__IDENTIFIER-ELEMENT-MODIFIER`
+__Coloring__
 
-- ACTION: What the class does: color, center, etc.
-- IDENTIFIER: Does this apply to inside(parent) or the element itself(this).
-- ELEMENT: What type of element is it: block vs text.
-- MODIFIERS (optional): Describes the action: blue, red, dark-red, etc.
+* `.color__this-text-blue` | `.color__this-block-blue`
+* `.color__this-text-dark-blue` | `.color__this-block-dark-blue`
+* `.color__this-text-green` | `.color__this-block-green`
+* `.color__this-text-dark-green | `.color__this-block-dark-green`
+* `.color__this-text-purple` | `.color__this-block-purple`
+* `.color__this-text-dark-purple` | `.color__this-block-dark-purple`
+* `.color__this-text-yellow` | `.color__this-block-yellow`
+* `.color__this-text-dark-yellow` | `.color__this-block-dark-yellow`
+* `.color__this-text-red` | `.color__this-block-red`
+* `.color__this-text-dark-red` | `.color__this-block-dark-red`
+* `.color__this-text-orange` | `.color__this-block-orange`
+* `.color__this-text-dark-orange` | `.color__this-block-dark-orange`
+* `.color__this-text-grey` | `.color__this-block-grey`
+* `.color__this-text-dark-grey` | `.color__this-block-dark-grey`
+* `.color__this-text-cloud` | `.color__this-block-cloud`
 
-As such, if you see a class name with `...-inside.-...-...`, this means you need to apply it to the parent element. In contrast, if you see `...-this-...-...`, you apply that class to the element directly. 
+__Animating__
 
-Done. You're all set to use this library!
+* `.fade__this-block-softly`, `.fade__this-text-softly`
+* `.levitate__this-block`, `.levitate__this-text`
 
-### To Use
-Download the dest/hackCSS.min.css file and place it in your project folder. After, create a link to it in the head of you html of your application.
+__Helpers__
 
-```html
-<link rel="stylesheet" type="text/css" href="file/path/hackCSS.min.css">
-```
+* `.stop__inside-block-overflow`, `.fix__inside-block-overflow`
+* `.size__this-block-width-1`, ...+.5 , `.size__inside-block-width-100`
+* `.size__inside-block-equal-height`
 
-Now you're all set to go!
 
-## Features/Fixes
-#### Currently Implemented 
-- Box-sizing to fix width calculations for overflow elements
-- Vertical equal heights for items to use flexbox
-- Flat-colors for Background and Font Color
-- Overflowing elements
-- Flex-box override ordering
-
-#### Currently in Progress
-- Typography quick clean up
-- Resets
-- Basic widely used animations
-
-## Disclaimer
-This is not the type of framework is intended for 'quick-up-and-going' for Hackathon participants who have little CSS knowledge, but want to spice up their projects, yet run into common layout or styling problems. Thus, this framework is not intended to be used for production apps, as this will bloat your HTML with additional CSS classes! If you do need to apply some of these fixes to your application, view the source code of this repo, and apply similar properties within your rule declarations. If your using Sass, you could theoretically extend these generic classes to your individual classes, but there may be some performance degredation and it may make it unmaintainable quickly.
+## License
+`HackCSS.css` is under the [MIT license](http://opensource.org/licenses/MIT).
 
 ## Contribute
-### Repository Guidelines:
-- Focus on elegant solutions that are scalable in most use-cases, abstraction is important
-- Use CSS standards when possible
-- If possible, keep commits clean, short titles, present-tense, and meaningful 
-- Comments. Please let us know what a specific rule declaration
-- Behavior driven class names that are easy to remember for anyone
-
-### How to:
-I highly recommend submitting the issue explaining the purpose and use-case of this issue, we don't want you do to work, but not be accepted because of out-of-scope implementation. Thus, if it fits within the principles stated in the readme, and people agree on the need. Fork the repository, implement the solution, and submit a pull request to be reviewed. If feedback has been addressed, repository admins will merge it in!
+Fork the repository, implement a solution, and submit a pull request to be reviewed. As long as the solution fits with the scope of the project, and all feedback has been addressed, we will merge it in.
