@@ -22,9 +22,9 @@
 	}
 }
 
-/* size__this-block-width-(i+.5) */
+/* size__this-block-width-(i) */
 .size {
-	@for $i from 1 to 100 by .5 {
+	@for $i from 1 to 100 {
 		@mixin iem this, block, width-$i {
 			width: $i%;
 		}

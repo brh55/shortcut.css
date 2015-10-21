@@ -59,7 +59,7 @@ __Positioning__
 * `.move__this-block-to-the-bottom`
 * `.move__this-block-to-the-top`
 * `.move__this-block-to-the-end`
-* `.move__this-block-to-1`, ..., `move__this-block-to-100`
+* `.move__this-block-to-1`, ... , `move__this-block-to-100`
 * `.break__inside-block-into-rows`
 * `.break__this-block-order-to-first`
 * `.space__inside-block-evenly-vertically`
@@ -96,7 +96,7 @@ __Animating__
 __Helpers__
 
 * `.stop__inside-block-overflow`, `.fix__inside-block-overflow`
-* `.size__this-block-width-1`, `.size__this-block-width-1.5`, ... , `.size__inside-block-width-100`
+* `.size__this-block-width-1`, ... , `.size__inside-block-width-100`
 * `.size__inside-block-equal-height`
 
 
