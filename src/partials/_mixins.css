@@ -5,7 +5,7 @@
    ========================================================================== */
 
 /* Use mixins for less-error-prone rules */
-@define-mixin identifier $identifier {
+@define-mixin i $identifier {
 	&__$(identifier) {
 		@mixin-content;
 	}

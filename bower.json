@@ -1,0 +1,14 @@
+{
+	"name": "HackCSS",
+	"version": "0.0.4",
+	"main": "/dist/css/hackCSS.min.css",
+	"ignore": [
+		".travis.yml",
+		".gitignore",
+		"gulpfile.js",
+		"package.json",
+		"README.md",
+		"src",
+		"node_modules"
+	]
+}
