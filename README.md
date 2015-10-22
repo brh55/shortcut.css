@@ -28,28 +28,33 @@ bower install hackcss
 
 2. __THIS__ vs __INSIDE__
 
-   If you see a class name with `...__inside.-...-...`, this means where ever you attach this class, the behavior occurs within the element. In contrast, if you see `...__this-...-...`, the behavior occurs to the element.
+   If you see a class name with `...__inside.-...-...`, this means whereever you attach this class, the behavior will occur within the element. In contrast, if you see `...__this-...-...`, the behavior occurs to the actual element.
 
-     `this` Example: `color__this-text-red` class
+    __this__ Example: `color__this-text-red` class
     ```html
 	<p class="color__this-text-red">Please make me red</p> <!-- This becomes RED: ~~ OOOH ~~ -->
-```
+    ```
 
-    `inside` Example: `center__inside-block-only-text` class
+    __inside__ Example: `center__inside-block-only-text` class
     ```html
-<div class="center__inside-block-only-text"> <!-- I want to only center text INSIDE -->
-	<p>I'm centered!</p> <!-- this becomes centered -->
-</div>
-```
+    <div class="center__inside-block-only-text"> <!-- I want to only center text INSIDE -->
+	    <p>Center me!</p> <!-- this text is centered -->
+	    
+	    <div> <!-- this block isn't centered  -->
+			<p>I'm text</p> <!-- this text is centered -->
+	   </div>
+    </div>
+    ```
 
 3. Now try out these available classes:
 
 __Positioning__
 
-* `.center__inside-block-only-text`
+* `.center__inside-block-only-text`, `.center__inside-block-text-only`
 * `.center__inside-block-everything-vertically`
 * `.center__inside-block-everything-horizontally`
 * `.center__inside-block-everything`, `.move__inside-block-everything-center`
+
 * `.move__inside-block-everything-left`
 * `.move__inside-block-everything-right`
 * `.move__inside-block-everything-bottom`
@@ -60,11 +65,14 @@ __Positioning__
 * `.move__this-block-to-the-top`
 * `.move__this-block-to-the-end`
 * `.move__this-block-to-1`, ... , `move__this-block-to-100`
+
 * `.break__inside-block-into-rows`
 * `.break__this-block-order-to-first`
+
 * `.space__inside-block-evenly-vertically`
 * `.space__inside-block-evenly-horizontally`
 * `.space__inside-block-all-around-evenly`
+
 * `.grow__this-block`
 * `.grow__this-block-more`
 * `.grow__this-block-even-more`
@@ -88,6 +96,8 @@ __Coloring__
 * `.color__this-text-dark-grey` | `.color__this-block-dark-grey`
 * `.color__this-text-cloud` | `.color__this-block-cloud`
 
+* `.bold__this-text`
+
 __Animating__
 
 * `.fade__this-block-softly`, `.fade__this-text-softly`
@@ -96,7 +106,7 @@ __Animating__
 __Helpers__
 
 * `.stop__inside-block-overflow`, `.fix__inside-block-overflow`
-* `.size__this-block-width-1`, ... , `.size__inside-block-width-100`
+* `.size__this-block-width-1`, ... , `.size__this-block-width-100`
 * `.size__inside-block-equal-height`
 
 ## For Developers
