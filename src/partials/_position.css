@@ -8,7 +8,8 @@
 	@mixin ie inside, block {
 
 		/* center__inside-block-only-text */
-		&-only-text {
+		&-only-text,
+		&-text-only {
 			text-align: center;
 		}
 
@@ -26,8 +27,8 @@
 			justify-content: center;
 		}
 		
-		/* center__inside-block-everything */
-		/* @ALIAS: .move__inside-block-everything-center */
+		/* center__inside-block-everything
+		   @ALIAS: move__inside-block-everything-center */
 		&-everything {
 			display: flex;
 			justify-content: center;
@@ -61,6 +62,7 @@
 			align-items: flex-end;
 		}
 
+		/* move__inside-block-everything-top */		
 		&-everything-top,
 		&-everything-to-the-top {
 			display: flex;
