@@ -54,7 +54,6 @@ __Positioning__
 * `.center__inside-block-everything-vertically`
 * `.center__inside-block-everything-horizontally`
 * `.center__inside-block-everything`, `.move__inside-block-everything-center`
-
 * `.move__inside-block-everything-left`
 * `.move__inside-block-everything-right`
 * `.move__inside-block-everything-bottom`
@@ -65,14 +64,11 @@ __Positioning__
 * `.move__this-block-to-the-top`
 * `.move__this-block-to-the-end`
 * `.move__this-block-to-1`, ... , `move__this-block-to-100`
-
 * `.break__inside-block-into-rows`
 * `.break__this-block-order-to-first`
-
 * `.space__inside-block-evenly-vertically`
 * `.space__inside-block-evenly-horizontally`
 * `.space__inside-block-all-around-evenly`
-
 * `.grow__this-block`
 * `.grow__this-block-more`
 * `.grow__this-block-even-more`
@@ -95,7 +91,6 @@ __Coloring__
 * `.color__this-text-grey` | `.color__this-block-grey`
 * `.color__this-text-dark-grey` | `.color__this-block-dark-grey`
 * `.color__this-text-cloud` | `.color__this-block-cloud`
-
 * `.bold__this-text`
 
 __Animating__
