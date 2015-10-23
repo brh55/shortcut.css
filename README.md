@@ -1,5 +1,5 @@
 # Hack.css
-[![Build Status](https://travis-ci.org/brh55/HackCSS.svg)](https://travis-ci.org/brh55/HackCSS)
+[![Build Status](https://travis-ci.org/brh55/hack.css.svg?branch=master)](https://travis-ci.org/brh55/hack.css)
 [![devDendencies Status](https://david-dm.org/brh55/hack.css/dev-status.svg)](https://david-dm.org/brh55/hack.css#info=devDependencies)
 
 *Don't fight with css, style with it.*
