@@ -56,7 +56,7 @@
 
 .make {
 	@mixin ie this, block {
-		&-grey-scale,
+		&-greyscale,
 		&-black-and-white {
 			filter: grayscale(100%)
 		}
