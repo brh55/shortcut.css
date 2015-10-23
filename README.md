@@ -15,16 +15,16 @@ This framework is built on these principles:
 1. Download the dist/css/hack.min.css file and place it in your project folder. After, create a link to within the head of your html.
 
     ```html
-<head>
-	<link rel="stylesheet" type="text/css" href="file/path/hack.min.css">
-</head>
-```
+    <head>
+	    <link rel="stylesheet" type="text/css" href="file/path/hack.min.css">
+    </head>
+    ```
 
-     You can also use bower if you know what that is...
+    You can also install through bower:
 
-     ```bash
-bower install hackcss
-```
+    ```bash
+    bower install hack.css
+    ```
 
 2. __THIS__ vs __INSIDE__
 
@@ -103,6 +103,9 @@ __Helpers__
 * `.stop__inside-block-overflow`, `.fix__inside-block-overflow`
 * `.size__this-block-width-1`, ... , `.size__this-block-width-100`
 * `.size__inside-block-equal-height`
+* `.size__this-block-to-window`
+* `.size__this-block-height-to-window`
+* `.size__this-block-width-to-window`
 
 ## For Developers
 Hack.css is built off PostCSS and gulp, which makes it easy for you to create your own flavor for your next hackathon. Ensure that you have gulp install and dev dependencies.
