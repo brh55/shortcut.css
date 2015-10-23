@@ -9,7 +9,8 @@
 	@mixin ie inside, block {
 
 		/* stop__inside-block-overflow */
-		&-overflow {
+		&-overflow,
+		&-oversizing {
 			overflow: hidden; 
 		}
 
@@ -37,6 +38,26 @@
 
 		.items {
 			height: initial;
+		}
+	}
+
+	@mixin ie this, block {
+		/* size__this-block-to-window
+		   size__this-block-dimensions-to-window */
+		&-to-window,
+		&-dimensions-to-window {
+			width: 100vw;
+			height: 100vh;
+		}
+		
+		/* size__this-block-height-to-window */
+		&-height-to-window {
+			height: 100vh;
+		}
+
+		/* size__this-block-width-to-window */
+		&-width-to-window {
+			width: 100vw;
 		}
 	}
 }

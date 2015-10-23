@@ -8,8 +8,8 @@
 
 This framework is built on these principles:
 - AIEM - `ACTION__IDENTIFIER-ELEMENT-MODIFIER` Class Name Convention
-- Behavior driven class names _(ie: center-this, fix-this-width, etc)_ for easy to remember names
-- Hackathon specific requirements _(quick styling, teams lacking designers, time constraints, quick implementation, etc)_
+- Behaviorial driven class names _(ie: center-this, fix-this-width, etc)_
+- Hackathon specific requirements _(quick styling, time constraints, quick implementation, etc)_
 
 ## How do we use this? !@#$?
 1. Download the dist/css/hack.min.css file and place it in your project folder. After, create a link to within the head of your html.
@@ -91,6 +91,8 @@ __Coloring__
 * `.color__this-text-grey` | `.color__this-block-grey`
 * `.color__this-text-dark-grey` | `.color__this-block-dark-grey`
 * `.color__this-text-cloud` | `.color__this-block-cloud`
+* `.make__this-block-greyscale`, `.make__this-block-black-and-white`
+* `.shadow__this-text` | `.shadow__this-block`
 * `.bold__this-text`
 
 __Animating__
