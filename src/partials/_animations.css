@@ -6,6 +6,8 @@
 
 .fade {
 	@mixin i this {
+		/* fade__this-block-softly
+				     -text-softly */
 		&-block-softly,
 		&-text-softly {
 			animation: fade 2s ease-in;
@@ -15,6 +17,8 @@
 
 .levitate {
 	@mixin i this {
+		/* levitate__this-block
+						 -this */
 		&-block,
 		&-text {
 			animation: levitate 3s ease infinite;

@@ -43,7 +43,7 @@
 
 	@mixin ie this, block {
 		/* size__this-block-to-window
-		   size__this-block-dimensions-to-window */
+		   				   -dimensions-to-window */
 		&-to-window,
 		&-dimensions-to-window {
 			width: 100vw;

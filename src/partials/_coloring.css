@@ -56,6 +56,8 @@
 
 .make {
 	@mixin ie this, block {
+		/* make__this-block-greyscale
+		                   -black-and-white */
 		&-greyscale,
 		&-black-and-white {
 			filter: grayscale(100%)
@@ -65,12 +67,15 @@
 
 .bold {
 	@mixin ie this, text {
+		/* bold__this-text */
 		font-weight: bold;
 	}
 }
 
 .shadow {
 	@mixin i this {
+		/* shadow__this-text
+		               -block */
 		&-text,
 		&-block {
 			filter: drop-shadow(3px 3px 6px black);
