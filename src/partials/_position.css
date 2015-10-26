@@ -26,7 +26,7 @@
 			display: flex;
 			justify-content: center;
 		}
-		
+
 		/* center__inside-block-everything
 		   @ALIAS: move__inside-block-everything-center */
 		&-everything {
@@ -40,7 +40,7 @@
 
 .move {
 	@mixin ie inside, block {
-		
+
 		/* move__inside-block-everything-left */
 		&-everything-left,
 		&-everything-to-the-left {
@@ -55,14 +55,14 @@
 			justify-content: flex-end;
 		}
 
-		/* move__inside-block-everything-bottom */		
+		/* move__inside-block-everything-bottom */
 		&-everything-bottom,
 		&-everything-to-the-bottom {
 			display: flex;
 			align-items: flex-end;
 		}
 
-		/* move__inside-block-everything-top */		
+		/* move__inside-block-everything-top */
 		&-everything-top,
 		&-everything-to-the-top {
 			display: flex;
@@ -101,7 +101,7 @@
 			order: 101;
 		}
 
-		/* loop to allow reordering of each item up to 100 different list 
+		/* loop to allow reordering of each item up to 100 different list
 				move__this-block-to-#
 		*/
 		@for $i from 1 to 100 {
@@ -153,7 +153,7 @@
 	/* grow__this-block */
 	@mixin ie this, block {
 		flex-grow: 1;
-	
+
 		&-more {
 			flex-grow: 2
 		}
@@ -168,4 +168,3 @@
 		}
 	}
 }
-

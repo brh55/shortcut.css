@@ -36,7 +36,7 @@
 }
 
 
-/* 
+/*
  * Refrain from using this mixin, unless there is a legit reason too
  * Instead use a @mixin ie within an .action declaration for easier readability
  */
@@ -46,5 +46,3 @@
 		@mixin-content;
 	}
 }
-
-
