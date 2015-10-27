@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brh55/hack.css.git"
+    "url": "git+https://github.com/brh55/shortcut.css.git"
   },
   "keywords": [
     "CSS",
@@ -19,9 +19,9 @@
   "author": "Brandon Him",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/brh55/hack.css/issues"
+    "url": "https://github.com/brh55/shortcut.css/issues"
   },
-  "homepage": "https://github.com/brh55/hack.css#readme",
+  "homepage": "https://github.com/brh55/shortcut.css#readme",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
     "cssnano": "^3.0.3",
