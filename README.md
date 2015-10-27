@@ -1,34 +1,34 @@
-# Hack.css
-[![Build Status](https://travis-ci.org/brh55/hack.css.svg?branch=master)](https://travis-ci.org/brh55/hack.css)
-[![devDendencies Status](https://david-dm.org/brh55/hack.css/dev-status.svg)](https://david-dm.org/brh55/hack.css#info=devDependencies)
+# shortcut.css
+[![Build Status](https://travis-ci.org/brh55/shortcut.css.svg?branch=master)](https://travis-ci.org/brh55/shortcut.css)
+[![devDendencies Status](https://david-dm.org/brh55/shortcut.css/dev-status.svg)](https://david-dm.org/brh55/shortcut.css#info=devDependencies)
 
 *Don't fight with css, style with it.*
 
-`hack.css` is a straightfoward library for hackathons to fix typical CSS issues designed for CSS newcomers.
+`shortcut.css` is a straightforward library designed to achieve typical CSS behavior quickly and efficiently. Each class name is built in regards to affordances, the _where_ and _what_ about an object in relation to it's environment. Similar to our brains, it hinges on the idea of expectations, which allows us to quickly process the behavior of the class name. Thus, at a glance, one could understand what a class would do and how to apply it without fully needing to understand the background around it -- just like a _shortcut_.
 
 This framework is built on these principles:
-- AIEM - `ACTION__IDENTIFIER-ELEMENT-MODIFIER` Class Name Convention
-- Behaviorial driven class names _(ie: center-this, fix-this-width, etc)_
-- Hackathon specific requirements _(quick styling, time constraints, quick implementation, etc)_
+- AIEM - `ACTION__IDENTIFIER-ELEMENT-MODIFIERS` Class Name Convention
+- Behavioral driven class names _(ie: center-this, fix-this-width, etc)_
+- Time constrained requirements _(quick fixes, style adjustments, etc)_
 
 ## How do we use this? !@#$?
-1. Download the dist/css/hack.min.css file and place it in your project folder. After, create a link to within the head of your html.
+1. Download the dist/css/shortcut.min.css file and place it in your project folder. After, create a link to within the head of your html.
 
     ```html
     <head>
-	    <link rel="stylesheet" type="text/css" href="file/path/hack.min.css">
+	    <link rel="stylesheet" type="text/css" href="file/path/shortcut.min.css">
     </head>
     ```
 
     You can also install through bower:
 
     ```bash
-    bower install hack.css
+    bower install shortcut.css
     ```
 
 2. __THIS__ vs __INSIDE__
 
-   If you see a class name with `...__inside.-...-...`, this means whereever you attach this class, the behavior will occur within the element. In contrast, if you see `...__this-...-...`, the behavior occurs to the actual element.
+   The `IDENTIFIER` explains to us where we need to attach the class name. Therefore, if you see a class name with `...__inside.-...-...`, this means wherever you attach this class, the behavior will occur within the element. In contrast, if you see `...__this-...-...`, the behavior occurs to the actual element.
 
     __this__ Example: `color__this-text-red` class
     ```html
@@ -110,10 +110,10 @@ __Helpers__
 * `.size__this-block-width-to-window`
 
 ## For Developers
-Hack.css is built off PostCSS and gulp, which makes it easy for you to create your own flavor for your next hackathon. Ensure that you have gulp install and dev dependencies.
+shortcut.css is built off PostCSS and gulp, which makes it easy for you to create your own flavor for your next project. To do so, ensure that you have gulp install and dev dependencies.
 
 ```bash
-$ cd path/to/hack.css/
+$ cd path/to/shortcut.css/
 $ npm install
 ```
 
@@ -136,7 +136,7 @@ If you want to add your own partial to the build, simply create the new file, an
 ```
 
 ## License
-`hack.css` is under the [MIT license](http://opensource.org/licenses/MIT).
+`shortcut.css` is under the [MIT license](http://opensource.org/licenses/MIT).
 
 ## Contribute
 Fork the repository, implement a solution, and submit a pull request to be reviewed. As long as the solution fits with the scope of the project, and all feedback has been addressed, we will merge it in.

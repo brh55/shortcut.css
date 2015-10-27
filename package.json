@@ -1,7 +1,7 @@
 {
-  "name": "hack.css",
+  "name": "shortcut.css",
   "version": "0.0.5",
-  "description": "A light CSS library to simplify your next hackathon",
+  "description": "A light CSS library extra designed for quick and fast projects.",
   "main": "index.js",
   "scripts": {
     "test": "gulp build"
@@ -16,7 +16,7 @@
     "Beginner",
     "Friendly"
   ],
-  "author": "Branodn Him",
+  "author": "Brandon Him",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/brh55/hack.css/issues"

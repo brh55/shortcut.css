@@ -1,7 +1,7 @@
 {
-	"name": "hack.css",
-	"version": "0.0.5",
-	"main": "/dist/css/hack.min.css",
+	"name": "shortcut.css",
+	"version": "0.0.8",
+	"main": "/dist/css/shortcut.min.css",
 	"ignore": [
 		".travis.yml",
 		".gitignore",

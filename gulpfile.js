@@ -29,7 +29,7 @@ gulp.task('build', function () {
 
     return gulp.src('./src/*.css')
         .pipe(postcss(processors))
-	    .pipe(rename('hack.min.css'))
+	    .pipe(rename('shortcut.min.css'))
 	    .pipe(gulp.dest('./dist/css'));
 });
 
