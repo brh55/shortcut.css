@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Helpers
+
+   Any helper-related rule declarations
+   ========================================================================== */
+
+.stop,
+.fix {
+	@mixin ie inside, block {
+
+		/* stop__inside-block-overflow */
+		&-overflow,
+		&-oversizing {
+			overflow: hidden;
+		}
+
+		/* fix__inside-block-form-sizes */
+		&-form-sizes {
+			input {
+				box-sizing: border-box;
+			}
+		}
+	}
+}
+
+/* size__this-block-width-(i) */
+.size {
+	@for $i from 1 to 100 {
+		@mixin iem this, block, width-$i {
+			width: $i%;
+		}
+	}
+
+	/* size__inside-block-equal-height */
+	/* Apply items in child divs if height's are overriding */
+	@mixin iem inside, block, equal-height {
+		display: flex;
+
+		.items {
+			height: initial;
+		}
+	}
+
+	@mixin ie this, block {
+		/* size__this-block-to-window
+		   				   -dimensions-to-window */
+		&-to-window,
+		&-dimensions-to-window {
+			width: 100vw;
+			height: 100vh;
+		}
+
+		/* size__this-block-height-to-window */
+		&-height-to-window {
+			height: 100vh;
+		}
+
+		/* size__this-block-width-to-window */
+		&-width-to-window {
+			width: 100vw;
+		}
+	}
+}

@@ -1,0 +1,48 @@
+/* ==========================================================================
+   Mixins
+
+   Mixins defined here, a way to make life easier.
+   ========================================================================== */
+
+/* Use mixins for less-error-prone rules */
+@define-mixin i $identifier {
+	&__$(identifier) {
+		@mixin-content;
+	}
+}
+
+@define-mixin e $element {
+	&-$(element) {
+		@mixin-content;
+	}
+}
+
+@define-mixin m $modifier {
+	&-$(modifier) {
+		@mixin-content;
+	}
+}
+
+@define-mixin ie $identifier, $element {
+	&__$(identifier)-$(element) {
+		@mixin-content;
+	}
+}
+
+@define-mixin iem $identifier, $element, $modifier {
+	&__$(identifier)-$(element)-$(modifier) {
+		@mixin-content;
+	}
+}
+
+
+/*
+ * Refrain from using this mixin, unless there is a legit reason too
+ * Instead use a @mixin ie within an .action declaration for easier readability
+ */
+
+@define-mixin aiem $action, $identifier, $element, $modifier {
+	.$(action)__$(identifier)-$(element)-$(modifier) {
+		@mixin-content;
+	}
+}

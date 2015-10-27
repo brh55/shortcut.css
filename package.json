@@ -1,14 +1,14 @@
 {
-  "name": "hackcss",
-  "version": "0.0.1",
-  "description": "A quick and lean CSS add-on framework for hackathoners who are beginners to CSS.",
+  "name": "shortcut.css",
+  "version": "0.0.5",
+  "description": "A light CSS library extra designed for quick and fast projects.",
   "main": "index.js",
   "scripts": {
-    "test": "gulp serve"
+    "test": "gulp build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brh55/HackCSS.git"
+    "url": "git+https://github.com/brh55/shortcut.css.git"
   },
   "keywords": [
     "CSS",
@@ -16,16 +16,22 @@
     "Beginner",
     "Friendly"
   ],
-  "author": "Branodn Him",
+  "author": "Brandon Him",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/brh55/HackCSS/issues"
+    "url": "https://github.com/brh55/shortcut.css/issues"
   },
-  "homepage": "https://github.com/brh55/HackCSS#readme",
+  "homepage": "https://github.com/brh55/shortcut.css#readme",
   "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "cssnano": "^3.0.3",
     "gulp": "^3.9.0",
-    "gulp-minify-css": "^1.2.1",
     "gulp-postcss": "^6.0.0",
-    "gulp-scss-lint": "^0.3.0"
+    "gulp-rename": "^1.2.2",
+    "postcss": "^5.0.5",
+    "postcss-each": "^0.7.0",
+    "postcss-reporter": "^1.2.1",
+    "precss": "^1.1.3",
+    "stylelint": "^1.1.0"
   }
 }

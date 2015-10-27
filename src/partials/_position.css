@@ -1,0 +1,170 @@
+/* ==========================================================================
+   Position
+
+   Position related css declarations
+   ========================================================================== */
+
+.center {
+	@mixin ie inside, block {
+
+		/* center__inside-block-only-text */
+		&-only-text,
+		&-text-only {
+			text-align: center;
+		}
+
+		/* center__inside-block-everything-vertically */
+		&-everything-vertically,
+		&-all-vertically {
+			display: flex;
+			align-items: center;
+		}
+
+		/* center__inside-block-everything-horizontally */
+		&-everything-horizontally,
+		&-all-horizontally {
+			display: flex;
+			justify-content: center;
+		}
+
+		/* center__inside-block-everything
+		   @ALIAS: move__inside-block-everything-center */
+		&-everything {
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			text-align: center;
+		}
+	}
+}
+
+.move {
+	@mixin ie inside, block {
+
+		/* move__inside-block-everything-left */
+		&-everything-left,
+		&-everything-to-the-left {
+			display: flex;
+			justify-content: flex-start;
+		}
+
+		/* move__inside-block-everything-right */
+		&-everything-right,
+		&-everything-to-the-right{
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		/* move__inside-block-everything-bottom */
+		&-everything-bottom,
+		&-everything-to-the-bottom {
+			display: flex;
+			align-items: flex-end;
+		}
+
+		/* move__inside-block-everything-top */
+		&-everything-top,
+		&-everything-to-the-top {
+			display: flex;
+			align-itmes: flex-start;
+		}
+
+		/* move__inside-block-everything-center */
+		&-everything-center,
+		&-everything-to-the-center {
+			@extend .center__inside-block-everything-vertically;
+		}
+
+		/* move__inside-block-everything-evenly */
+		/* @ALIAS: space__inside-block-evenly-horizontally */
+		&-everything-evenly {
+			display: flex;
+			justify-content: space-around;
+		}
+	}
+
+	@mixin ie this, block {
+
+		/* move__this-block-to-the-bottom */
+		&-to-the-bottom {
+			align-self: flex-end;
+		}
+
+		/* move__this-block-to-the-top */
+		&-to-the-top {
+			align-self: flex-start;
+		}
+
+		/* move__this-block-to-the-end */
+		/* Assuming ordering is performed by classes specified in lib */
+		&-to-the-end {
+			order: 101;
+		}
+
+		/* loop to allow reordering of each item up to 100 different list
+				move__this-block-to-#
+		*/
+		@for $i from 1 to 100 {
+			&-to-$i {
+				order: $i;
+			}
+		}
+	}
+}
+
+.break {
+	@mixin ie inside, block {
+		/* break__inside-block-into-rows */
+		&-into-rows {
+			flex-flow: row wrap;
+		}
+	}
+
+	@mixin ie this, block {
+		/* break__this-block-order-to-first */
+		&-order-to-end {
+			@extend .move__this-block-to-the-end;
+		}
+	}
+}
+
+.space {
+	@mixin ie inside, block {
+
+		/* space__inside-block-evenly-vertically */
+		&-evenly-vertically {
+			align-content: space-between;
+		}
+
+		/* space__inside-block-evenly-horizontally */
+		&-evenly-horizontally {
+			@extend .move__inside-block-everything-evenly;
+		}
+
+		/* space__inside-block-all-around-evenly */
+		&-all-around-evenly {
+			align-content: space-around;
+			justify-content: space-around;
+		}
+	}
+}
+
+.grow {
+	/* grow__this-block */
+	@mixin ie this, block {
+		flex-grow: 1;
+
+		&-more {
+			flex-grow: 2
+		}
+
+		&-even-more {
+			flex-grow: 3
+		}
+
+		/* Not max, but will do */
+		&-to-the-max {
+			flex-grow: 99;
+		}
+	}
+}
