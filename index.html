@@ -21,7 +21,7 @@
       <div class="inner">
         <h1>Hackcss</h1>
         <h2>A light CSS library to simplify for your next hackathon</h2>
-        <a href="https://github.com/brh55/hack.css" class="button"><small>View project on</small> GitHub</a>
+        <a href="https://github.com/brh55/shortcut.css" class="button"><small>View project on</small> GitHub</a>
       </div>
     </header>
 
@@ -29,19 +29,19 @@
       <div class="inner clearfix">
         <section id="main-content">
           <h1>
-<a id="hackcss" class="anchor" href="#hackcss" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack.css</h1>
+<a id="shortcutcss" class="anchor" href="#shortcutcss" aria-hidden="true"><span class="octicon octicon-link"></span></a>shortcut.css</h1>
 
 <p><em>Don't fight with css, style with it.</em></p>
 
-<p><code>hack.css</code> is a straightfoward library for hackathons to fix typical CSS issues designed for CSS newcomers.</p>
+<p><code>shortcut.css</code> is a straightforward library designed to achieve typical CSS behavior quickly and efficiently. Each class name is built in regards to affordances, the <em>where</em> and <em>what</em> about an object in relation to it's environment. Similar to our brains, it hinges on the idea of expectations, which allows us to quickly process the behavior of the class name. Thus, at a glance, one could understand what a class would do and how to apply it without fully needing to understand the background around it -- just like a <em>shortcut</em>.</p>
 
 <p>This framework is built on these principles:</p>
 
 <ul>
-<li>AIEM - <code>ACTION__IDENTIFIER-ELEMENT-MODIFIER</code> Class Name Convention</li>
-<li>Behaviorial driven class names <em>(ie: center-this, fix-this-width, etc)</em>
+<li>AIEM - <code>ACTION__IDENTIFIER-ELEMENT-MODIFIERS</code> Class Name Convention</li>
+<li>Behavioral driven class names <em>(ie: center-this, fix-this-width, etc)</em>
 </li>
-<li>Hackathon specific requirements <em>(quick styling, time constraints, quick implementation, etc)</em>
+<li>Time constrained requirements <em>(quick fixes, style adjustments, etc)</em>
 </li>
 </ul>
 
@@ -50,20 +50,20 @@
 
 <ol>
 <li>
-<p>Download the dist/css/hack.min.css file and place it in your project folder. After, create a link to within the head of your html.</p>
+<p>Download the dist/css/shortcut.min.css file and place it in your project folder. After, create a link to within the head of your html.</p>
 
 <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">head</span>&gt;
-    &lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>file/path/hack.min.css<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/css<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>file/path/shortcut.min.css<span class="pl-pds">"</span></span>&gt;
 &lt;/<span class="pl-ent">head</span>&gt;</pre></div>
 
 <p>You can also install through bower:</p>
 
-<div class="highlight highlight-source-shell"><pre>bower install hack.css</pre></div>
+<div class="highlight highlight-source-shell"><pre>bower install shortcut.css</pre></div>
 </li>
 <li>
 <p><strong>THIS</strong> vs <strong>INSIDE</strong></p>
 
-<p>If you see a class name with <code>...__inside.-...-...</code>, this means whereever you attach this class, the behavior will occur within the element. In contrast, if you see <code>...__this-...-...</code>, the behavior occurs to the actual element.</p>
+<p>The <code>IDENTIFIER</code> explains to us where we need to attach the class name. Therefore, if you see a class name with <code>...__inside.-...-...</code>, this means wherever you attach this class, the behavior will occur within the element. In contrast, if you see <code>...__this-...-...</code>, the behavior occurs to the actual element.</p>
 
 <p><strong>this</strong> Example: <code>color__this-text-red</code> class</p>
 
@@ -203,9 +203,9 @@
 <h2>
 <a id="for-developers" class="anchor" href="#for-developers" aria-hidden="true"><span class="octicon octicon-link"></span></a>For Developers</h2>
 
-<p>Hack.css is built off PostCSS and gulp, which makes it easy for you to create your own flavor for your next hackathon. Ensure that you have gulp install and dev dependencies.</p>
+<p>shortcut.css is built off PostCSS and gulp, which makes it easy for you to create your own flavor for your next project. To do so, ensure that you have gulp install and dev dependencies.</p>
 
-<div class="highlight highlight-source-shell"><pre>$ <span class="pl-c1">cd</span> path/to/hack.css/
+<div class="highlight highlight-source-shell"><pre>$ <span class="pl-c1">cd</span> path/to/shortcut.css/
 $ npm install</pre></div>
 
 <p>Afterwards, you can develop with either with a constant stream open to watch for changes within the src directory, which will recompile on every change.</p>
@@ -223,7 +223,7 @@ $ npm install</pre></div>
 <h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
 
-<p><code>hack.css</code> is under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
+<p><code>shortcut.css</code> is under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.</p>
 
 <h2>
 <a id="contribute" class="anchor" href="#contribute" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contribute</h2>
@@ -232,16 +232,16 @@ $ npm install</pre></div>
         </section>
 
         <aside id="sidebar">
-          <a href="https://github.com/brh55/hack.css/zipball/master" class="button">
+          <a href="https://github.com/brh55/shortcut.css/zipball/master" class="button">
             <small>Download</small>
             .zip file
           </a>
-          <a href="https://github.com/brh55/hack.css/tarball/master" class="button">
+          <a href="https://github.com/brh55/shortcut.css/tarball/master" class="button">
             <small>Download</small>
             .tar.gz file
           </a>
 
-          <p class="repo-owner"><a href="https://github.com/brh55/hack.css"></a> is maintained by <a href="https://github.com/brh55">brh55</a>.</p>
+          <p class="repo-owner"><a href="https://github.com/brh55/shortcut.css"></a> is maintained by <a href="https://github.com/brh55">brh55</a>.</p>
 
           <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
         </aside>
