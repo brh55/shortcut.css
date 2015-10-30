@@ -63,6 +63,7 @@
 }
 
 .make {
+    /* make__this-block-invisible */
 	@mixin iem this, block, invisible {
 		visibility: hidden;
 	}
@@ -77,4 +78,13 @@
             @extend .make__this-block-invisible;
 		}
 	}
+}
+
+.remove {
+    @mixin i this {
+        &-text,
+        &-block {
+            display: none;
+        }
+    }
 }
