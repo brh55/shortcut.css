@@ -72,7 +72,7 @@
 .hide {
 	@mixin i this {
 		/* hide__this-block
-                     -text */
+                     -text  */
 		&-text,
 		&-block {
             @extend .make__this-block-invisible;
@@ -81,6 +81,8 @@
 }
 
 .remove {
+    /* remove__this-block
+                   -text  */
     @mixin i this {
         &-text,
         &-block {
@@ -88,3 +90,16 @@
         }
     }
 }
+
+/* allow__this-block-to-have-pointer-on-hover */
+.allow {
+    @mixin i this {
+        &-block,
+        &-text {
+            &-to-have-pointer-on-hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
