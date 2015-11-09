@@ -1,0 +1,14 @@
+/* ==========================================================================
+   Typography
+
+   Typography wrapper classes to create prototype typography styles
+   This is still very much a Proof of Concept.
+   ========================================================================== */
+
+.experiment {
+    @mixin iem inside, this, block {
+        &-with-font-combo-1 {
+            // figure out best way to implement
+        }
+    }
+}
